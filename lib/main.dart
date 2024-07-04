@@ -2,7 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:navigation/pages/first_page.dart';
+import 'package:navigation/pages/homepage.dart';
 import 'package:navigation/pages/second_page.dart';
+import 'package:navigation/pages/settingpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,6 +21,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/first': (context) => FirstPage(),
         '/second': (context) => SecondPage(),
+        '/homepage': (context) => HomePage(),
+        '/settingpage': (context) => SettingPage()
       },
     );
   }
